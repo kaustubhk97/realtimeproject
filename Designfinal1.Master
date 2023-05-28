@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Designfinal1.master.cs" Inherits="realtimeproject.Designfinal1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            font-size: x-large;
+            text-decoration: underline;
+        }
+        .newStyle1 {
+            font-family: SimSun;
+        }
+        .auto-style3 {
+            background-color: #FFFF66;
+            text-align: center;
+            color: #FFFF99;
+        }
+        .auto-style5 {
+            font-size: x-large;
+            color: #99FF99;
+        }
+        .newStyle2 {
+            font-family: "MS UI Gothic";
+        }
+        .auto-style8 {
+            font-size: xx-large;
+            color: #CC3300;
+        }
+        .newStyle3 {
+            font-family: "Courier New";
+        }
+        .newStyle4 {
+            font-family: "Calibri Light";
+        }
+        .newStyle5 {
+            font-family: Impact;
+        }
+        .auto-style9 {
+            font-family: Impact;
+            font-size: xx-large;
+            color: #CC3300;
+        }
+        menu{
+            position=sticky;
+        }
+        
+        .auto-style10 {
+            margin-top: 4px;
+        }
+        .newStyle6 {
+            font-family: "MS Sans Serif";
+        }
+        .newStyle7 {
+            font-family: "Lucida Console";
+        }
+        .newStyle8 {
+            font-family: "Microsoft PhagsPa";
+        }
+        .auto-style11 {
+            font-family: "Microsoft PhagsPa";
+            color: #000000;
+            font-size: xx-large;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3"><strong class="newStyle1"><span class="auto-style2">
+                        <br />
+                        </span><span class="auto-style11">WELCOME TO SDFC BANK</span><span class="auto-style9"><br />
+                        </span><span class="newStyle3"><span class="auto-style8">----------------------------------------------------------------</span></span><span class="newStyle4"><br />
+                        <asp:Image ID="Image3" runat="server" CssClass="auto-style10" Height="170px" ImageUrl="~/images/90237059_3025836980793187_511979630899494912_n.jpg" Width="270px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Image ID="Image2" runat="server" Height="179px" ImageUrl="~/images/Seal_of_the_Reserve_Bank_of_India.svg.png" Width="298px" />
+                        <br />
+                        <br />
+&nbsp;</span></strong><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Menu ID="Menu1" runat="server" CssClass="auto-style5" Orientation="Horizontal">
+                            <DynamicHoverStyle BackColor="#FFCC66" BorderColor="#993333" ForeColor="#000066" />
+                            <DynamicMenuItemStyle BackColor="#FFFF99" ForeColor="Black" />
+                            <DynamicMenuStyle BackColor="#FFFF99" />
+                            <Items>
+                                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Register" Value="Register" NavigateUrl="~/custregister.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/loginex.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Admin Login" Value="Admin Login" NavigateUrl="~/adminlogin.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Our Services" Value="Our Products">
+                                    <asp:MenuItem Text="Loan" Value="Loan">
+                                        <asp:MenuItem Text="Home Loan" Value="Home Loan"></asp:MenuItem>
+                                        <asp:MenuItem Text="Car Loan" Value="Car Loan"></asp:MenuItem>
+                                        <asp:MenuItem Text="Motor Loan" Value="Motor Loan"></asp:MenuItem>
+                                        <asp:MenuItem Text="Property Loan" Value="Property Loan"></asp:MenuItem>
+                                        <asp:MenuItem Text="Gold Loan" Value="Gold Loan"></asp:MenuItem>
+                                        <asp:MenuItem Text="Sovereign Gold Bonds" Value="Sovereign Gold Bonds"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Mutual Funds" Value="Mutual Funds">
+                                        <asp:MenuItem Text="Long Term Mutual Fund Schemes" Value="Long Term Mutual Fund Schemes"></asp:MenuItem>
+                                        <asp:MenuItem Text="Short term Mutual Fund Schemes" Value="Short term Mutual Fund Schemes"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Open Current Account" Value="Open Current Account"></asp:MenuItem>
+                                    <asp:MenuItem Text="Open Demat Account" Value="Open Demat Account"></asp:MenuItem>
+                                    <asp:MenuItem Text="Apply for Loan" Value="Apply for Loan"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Locate Us" Value="Locate Us" Target="https://www.google.com/maps/dir/17.4391296,78.446592/sathya+technologies/@17.4381096,78.4448292,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bcb90c8de8a46cd:0xe8e471a2c345f6f9!2m2!1d78.4476513!2d17.4370829"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle ForeColor="#FF9900" />
+                            <StaticMenuItemStyle HorizontalPadding="50px" />
+                            <StaticMenuStyle HorizontalPadding="5px" />
+                            <StaticSelectedStyle HorizontalPadding="10px" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Copyrights @ Kaustubh K.<br />
+                        All Rights Reserved</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
